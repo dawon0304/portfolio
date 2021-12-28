@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나다운 포트폴리오</title>
+
+    <!-- 제이쿼리 링크 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- fullpage js 링크 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>
+    <!-- fullpage js css 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section fullpage-1" data-menuanchor="firstSection">
+            <section class="container">
+                <h1 class="title">
+                    <span style="font-size:50px;">안녕하세요. 편안함을 개발하고싶은 <br>
+                        <p style="color: rgb(233, 245, 255);">Front-end Developer</p> 나다운입니다.
+                    </span>
+                </h1>
+        </div>
+        <div class="section fullpage-2" data-menuanchor="secondSection">
+            <div>
+                <div class="about">
+                    <h1>ABOUT ME</h1>
+                    <div class="about__inner">
+                        <div class="left">
+                            <img src="./img/증명사진.jpg" alt="" class="me">
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <h1>Profile</h1>
+                                <li>나다운 / 충청남도 부여군 거주</li>
+                                <li>1996.03. 04</li>
+                                <li>010 8910 7235</li>
+                                <li>dawon0304@naver.com</li>
+                            </ul>
+
+                            <ul>
+                                <h1>Education</h1>
+                                <li>SBS 컴퓨터 아카데미 <br>
+                                    20201. 05 ~ 2021. 12</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="label">
+                    <h1>My skills</h1>
+                    <section>
+                        <select name="skill" onchange="handleOnChange(this)">
+                            <option
+                                value="HTML, HTML5의 기본 구조를 이해하며 타이틀, 하이퍼링크, 플러그인, 태그 등이 가능합니다. 또한, 웹표준 및 웹접근성을 항상 고려하여 마크업을 작성합니다.">
+                                HTML</option>
+                            <option value="CSS3의 기본 구조와 속성을 이해하며 외부 스타일 시트를 이용해 다양한 구조와 스타일, 코드 구현이 가능합니다.">CSS</option>
+                            <option value="JavaScript의 기본 구조를 이해하며 활용할 수 있습니다.
+선택자, 오픈소스 활용이 가능합니다.">JAVA SCRIPT</option>
+                        </select>
+
+                        <div id="values" class="values">HTML, HTML5의 기본 구조를 이해하며 타이틀, 하이퍼링크, 플러그인, 태그 등이 가능합니다. 또한, 웹표준
+                            및
+                            웹접근성을 항상
+                            고려하여 마크업을 작성합니다.
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section fullpage-3" data-menuanchor="thirdSection">
+            <div class="project">
+                <h1>Projects</h1>
+                <div class="project__box">
+                    <div class="pvcs" id='pvcs' onclick="window.open('https://dawon0304.github.io/pvcs/index.html')">
+                        <img src="./img/pvcs app.PNG" alt="">
+                    </div>
+                    <div class="elago" id='elage'
+                        onclick="window.open('https://dawon0304.github.io/elago-/index.html')">
+                        <img src="./img/엘라고 리디자인.PNG" alt="">
+                    </div>
+                    <div class="chrome" id='chrome'
+                        onclick="window.open('https://dawon0304.github.io/Projects/momen.html')">
+                        <img src="./img/크롬웹.png" alt="">
+                    </div>
+
+                    <div class="shopping" id='shopping'
+                        onclick="window.open('https://dawon0304.github.io/Shopping_List/shopping.html')">
+                        <img src="./img/쇼핑리스트.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="contact-text">
+                    <h1>Contact ME!</h1>
+                </div>
+                <div class="contact-btn">
+
+                    <button
+                        onclick="window.open('https://github.com/dawon0304/resume/blob/097a4e202d3deb5d2f0562545d03b6e6f685e865/%EC%9D%B4%EB%A0%A5%EC%84%9C.pdf');">RESUME</button>
+
+
+
+                    <button class="git" onclick="window.open('https://github.com/dawon0304');">
+                        <i class="fab fa-github">
+                        </i>
+                    </button>
+
+                    <button
+                        onclick="window.open('https://veiled-vision-ae2.notion.site/CSS-HTML-JS-Vue-js-4957fcfb364f4dee9587b60ae6c5c4bf');">
+                        Notion
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
